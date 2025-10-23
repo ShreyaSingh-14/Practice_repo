@@ -28,6 +28,10 @@ public class MergeSort{
         r[j]=Integer.MAX_VALUE;
          i=0;
          j=0;
+         //we could have used while loop with condition i<n1 && j<n2
+         //but in that case we have to handle the remaining elements in the arrays separately
+         //that would have taken another set of while loops to handle that
+         //there are ways to code better look for solutions in books they were written by awesome people
         for(int k=p;k<N;k++)
         {
             if(l[i]<=r[j])
@@ -37,7 +41,7 @@ public class MergeSort{
         }
     }
     //remember one things
-    //we are making changes in the same array to all the indexing must be considered throughtly
+    //when we are making changes in the same array to all the indexing must be considered throughtly
     //not all of them will start form 0 and end on lenght as we are passing p and q as the range we w
     //we will be working on
     public static void main(String args[])
