@@ -247,5 +247,21 @@ public class patterns
 		}
 		System.out.println();
 	}
+
+	System.out.println("patterns 22");
+	int a=0;
+	
+		for(int i=0;i<7;i++)
+		{
+			for(int j=0;j<7;j++)
+			{	
+				int top=i;
+				int bottom=6-i;
+				int left=j;
+				int right=6-j;
+				System.out.print(4-Math.min(Math.min(top,bottom),Math.min(right,left)));
+			}
+		System.out.println();
+		}
     }
 }
