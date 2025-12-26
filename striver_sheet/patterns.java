@@ -133,7 +133,7 @@ public class patterns
 	System.out.println();
 	}
 	System.out.println("patterns 13");
-	int c=1;
+	
 	for(int i=0;i<5;i++)
 	{
 		for(int j=0;j<=i;j++)
@@ -249,8 +249,7 @@ public class patterns
 	}
 
 	System.out.println("patterns 22");
-	int a=0;
-	
+
 		for(int i=0;i<7;i++)
 		{
 			for(int j=0;j<7;j++)
