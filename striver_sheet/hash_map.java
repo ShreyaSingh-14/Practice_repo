@@ -30,4 +30,19 @@ class practice
 		}
 	}
 }
-			
+class PracticeHash
+{
+	public static void main(String args[])
+	{
+		HashMap<Integer,Integer> map=new HashMap<>();
+		map.put(1,2);
+		map.put(4,5);
+		map.put(0,6);
+		map.put(-3,7);
+		List<Map.Entry<Integer,Integer>> l=new ArrayList<>(map.entrySet());
+		Collections.sort(l,Map.Entry.comparingByKey());
+		System.out.println(l);
+		Collections.sort(l,(a,b)->a.getValue()-b.getValue());
+		System.out.println(l);
+	}	
+}	 
