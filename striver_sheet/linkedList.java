@@ -75,6 +75,8 @@ public static void main(String args[])
 	Node ptr1=head;
 	Node ptr2=head2;
 	int query;
+	int count=0;
+	int countloop=0;
 	while(ptr1.next!=null)
 	{
 		query=ptr1.next.data;
@@ -85,8 +87,12 @@ public static void main(String args[])
 		else
 		{
 		ptr1=ptr1.next;
+		count++;
 		}
+	countloop++;
+		
 	}
+	System.out.println("count="+count);
 	Node p=head;
 	while(p!=null)
 	{
